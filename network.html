@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Your Network</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #0b1636;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: #fff;
+      width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      padding: 30px 40px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      color: #0b1636;
+      margin-bottom: 25px;
+    }
+
+    .login-container label {
+      font-weight: 600;
+      color: #0b1636;
+      display: block;
+      margin-bottom: 6px;
+      margin-top: 12px;
+    }
+
+    .login-container input,
+    .login-container select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .login-container input:focus,
+    .login-container select:focus {
+      border-color: #007bff;
+    }
+
+    .btn {
+      width: 100%;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .footer-text {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .footer-text a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .footer-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-container">
+    <h2>Enter your Credentials</h2>
+
+    <form>
+      <label for="userid">User ID</label>
+      <input type="text" id="userid" name="userid" placeholder="Enter your User ID" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+
+      <label for="email">College Email</label>
+      <input type="email" id="email" name="email" placeholder="Abc@abes.ac.in" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="branch">Branch</label>
+      <select id="branch" name="branch" required>
+        <option value="">Select Branch</option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="CIVIL">CIVIL</option>
+        <option value="MECH">MECH</option>
+      </select>
+    </form>
+    <form action="dashboard.html">
+      <button class="btn" type="submit">Login</button>
+
+
+    </form>
+
+    <p class="footer-text">Not a member? <a href="#">Join your network</a></p>
+  </div>
+
+</body>
+
+</html>

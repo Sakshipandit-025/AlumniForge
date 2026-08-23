@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programming Languages Hub</title>
+
+  <style>
+    *{margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,
+    Tahoma,sans-serif
+  }
+    body{
+    background:#f7f9fc;
+    color:#333
+  }
+    header{
+      background:#fff;
+      padding:16px 50px;
+      box-shadow:0 2px 6px rgba(0,0,0,.06)
+    }
+    header h2{
+      color:#2c3e50
+    }
+    .container{
+      padding:40px 60px
+    }
+    .languages{display:grid;
+      
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;margin-bottom:40px}
+    .lang-card{background:#fff;padding:22px;border-radius:8px;text-align:center;cursor:pointer;
+      box-shadow:0 4px 10px rgba(0,0,0,.05);transition:.3s}
+    .lang-card:hover{transform:translateY(-4px)}
+    
+    .section{background:#fff;padding:25px;margin-bottom:25px;border-radius:8px;
+      box-shadow:0 4px 10px rgba(0,0,0,.05)}
+    .section h3{margin-bottom:15px;color:#2c3e50}
+    .video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .video-card iframe{width:100%;aspect-ratio:16/9;border:none;border-radius:6px}
+    .video-card p{font-size:14px;margin-top:6px;color:#444}
+    footer{text-align:center;padding:20px;font-size:14px;color:#777}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Languages</h2>
+</header>
+
+<div class="container">
+
+  <div class="languages">
+    <div class="lang-card" onclick="openLang('cpp')">C++</div>
+    <div class="lang-card" onclick="openLang('html')">HTML</div>
+    <div class="lang-card" onclick="openLang('css')">CSS</div>
+    <div class="lang-card" onclick="openLang('js')">JavaScript</div>
+    <div class="lang-card" onclick="openLang('mongo')">MongoDB</div>
+    <div class="lang-card" onclick="openLang('rust')">Rust</div>
+    <div class="lang-card" onclick="openLang('c')">C</div>
+<div class="lang-card" onclick="openLang('java')">Java</div>
+<div class="lang-card" onclick="openLang('kotlin')">Kotlin</div>
+
+
+
+  </div>
+
+  <!-- C++ -->
+  <div id="cpp" class="details">
+    <!-- documentation -->
+    <div class="section">
+      <h3>Documentation</h3>
+      <a href="https://en.cppreference.com/w/" target="_blank">cppreference.com</a><br>
+      <a href="https://isocpp.org/" target="_blank">ISO C++</a>
+    </div>
+<!-- certification -->
+    <div class="section">
+  <h3>Certification</h3>
+  <a href="https://www.coursera.org/specializations/c-plus-plus-modern-development" target="_blank">
+    C++ Programming Specialization – Coursera
+  </a><br>
+  <a href="https://www.udemy.com/topic/c-plus-plus/" target="_blank">
+    C++ Courses & Certificates – Udemy
+  </a>
+</div>
+
+<!-- resources -->
+    <div class="section">
+      <h3>Resources</h3>
+      <div class="video-grid">
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL"></iframe>
+          <p>C++ Tutorials In Hindi (Full Course Playlist) – Code With Harry</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt"></iframe>
+          <p>Complete C++ DSA Course | Data Structures & Algorithms – Apna College</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ"></iframe>
+          <p>C++ Full Course | DSA – Apna College</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/e7sAf4SbS_g"></iframe>
+          <p>Complete C++ Tutorial in One Shot 2023 – Code With Harry</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/yGB9jhsEsr8"></iframe>
+          <p>C++ Tutorial For Beginners – Code With Harry</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/j8nAHeVKL08"></iframe>
+          <p>Introduction to C++, VS Code Setup – Code With Harry</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/YscEcXRmBoY"></iframe>
+          <p>Object Oriented Programming in C++ – Apna College</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/qR9U6bKxJ7g"></iframe>
+          <p>Conditional Statements & Loops – Apna College</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/Dxu7GKtdbnA"></iframe>
+          <p>Variables, Data Types & Operators – Apna College</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PLfqMhTWNBTe2C_dQAP1UoemcgAxBTlItp"></iframe>
+          <p>Recursion & Backtracking (Playlist) – Apna College</p>
+        </div>
+
+      </div>
+    </div>
+<!-- roadmap -->
+    <div class="section"><h3>Roadmap</h3>
+      <a href="https://roadmap.sh/cpp" target="_blank">View C++ Roadmap</a>
+    </div>
+  </div>
+
+  <!-- HTML -->
+  <div id="html" class="details">
+    <!-- documentation -->
+    <div class="section">
+      <h3>Documentation</h3>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML</a>
+    </div>
+<!-- certification -->
+<div class="section">
+  <h3>Certification</h3>
+  <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank">
+    HTML, CSS & JS for Web Developers – Coursera
+  </a><br>
+  <a href="https://www.udemy.com/topic/html5/" target="_blank">
+    HTML5 Certification Courses – Udemy
+  </a>
+</div>
+<!-- resources -->
+    <div class="section">
+      <h3>Resources</h3>
+      <div class="video-grid">
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/4WjtQjPQGIs"></iframe>
+          <p>HTML Tutorial for Beginners – Apna College</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/BsDoLVMnmZs"></iframe>
+          <p>HTML Tutorial For Beginners (With Notes) – Code With Harry</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/k2DSi1zGEc8"></iframe>
+          <p>HTML Full Course (Hindi) – Code With Harry</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/wPb2RNfLf94"></iframe>
+          <p>HTML Containers: Div & Span – Code With Harry</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/kJEsTjH5mVg"></iframe>
+          <p>Your First HTML Website – Code With Harry</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/1BsVhumGlNc"></iframe>
+          <p>Images, Lists & Tables in HTML – Code With Harry</p>
+        </div>
+
+      </div>
+    </div>
+<!-- roadmap -->
+    <div class="section"><h3>Roadmap</h3>
+      <a href="https://roadmap.sh/html" target="_blank">View HTML Roadmap</a>
+    </div>
+  </div>
+
+  <!-- css -->
+  <div id="css" class="details">
+    <div class="section">
+      <h3>Documentation</h3>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN CSS</a>
+    </div>
+
+<div class="section">
+  <!-- certification -->
+  <h3>Certification</h3>
+  <a href="https://www.coursera.org/learn/css" target="_blank">
+    Introduction to CSS – Coursera
+  </a><br>
+  <a href="https://www.udemy.com/topic/css/" target="_blank">
+    CSS Certification Courses – Udemy
+  </a>
+</div>
+<!-- resources -->
+    <div class="section">
+      <h3>Resources</h3>
+      <div class="video-grid">
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/ESnrn1kAD4E"></iframe>
+          <p>CSS Tutorial for Beginners – Apna College</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/u5-K_ua9sOw"></iframe>
+          <p>CSS One Shot – Code With Harry</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/Edsxf_NBFrw"></iframe>
+          <p>CSS Tutorial with Notes – Code With Harry</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/zts6uNVnCNs"></iframe>
+          <p>Flexbox Tutorial – Apna College</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/jiK6Mf-ILSg"></iframe>
+          <p>CSS Animations & Keyframes – Code With Harry</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/xpoWxFyGuC8"></iframe>
+          <p>CSS Floats & Position – Apna College</p>
+        </div>
+
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/eHye3PxH4jU"></iframe>
+          <p>CSS Media Queries – Code With Harry</p>
+        </div>
+
+      </div>
+    </div>
+<!-- roadmap -->
+    <div class="section"><h3>Roadmap</h3>
+      <a href="https://roadmap.sh/css" target="_blank">View CSS Roadmap</a>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <div id="js" class="details">
+    <div class="section">
+      <h3>Documentation</h3>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN JavaScript</a>
+    </div>
+<!-- certificatio -->
+<div class="section">
+  <h3>Certification</h3>
+  <a href="https://www.coursera.org/specializations/javascript-beginner" target="_blank">
+    JavaScript for Beginners Specialization – Coursera
+  </a><br>
+  <a href="https://www.udemy.com/topic/javascript/" target="_blank">
+    JavaScript Certification Courses – Udemy
+  </a>
+</div>
+<!-- resources -->
+    <div class="section">
+      <h3>Resources</h3>
+      <div class="video-grid">
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/hKB-YGF14SY"></iframe><p>JavaScript Full Course – Code With Harry</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/PkZNo7MFNFg"></iframe><p>JavaScript Crash Course – freeCodeCamp</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/hdI2bqOjy3c"></iframe><p>DOM Manipulation – JavaScript</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/_ALUMTa8BAE"></iframe><p>Modern JavaScript (ES6)</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/V_Kr9OSfDeU"></iframe><p>Async & Await – JavaScript</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/PoRJizFvM7s"></iframe><p>Promises in JavaScript</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/3PHXvlpOkf4"></iframe><p>JavaScript Mini Project</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/2Ji-clqUYnA"></iframe><p>Event Handling – JavaScript</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/9emXNzqCKyg"></iframe><p>JavaScript Interview Questions</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/W6NZfCO5SIk"></iframe><p>JavaScript Fundamentals</p></div>
+      </div>
+    </div>
+<!-- roadmap -->
+    <div class="section"><h3>Roadmap</h3>
+      <a href="https://roadmap.sh/javascript" target="_blank">View JavaScript Roadmap</a>
+    </div>
+  </div>
+
+  <!-- MongoDB -->
+  <div id="mongo" class="details">
+    <div class="section">
+      <h3>Documentation</h3>
+      <a href="https://www.mongodb.com/docs/" target="_blank">MongoDB Docs</a>
+    </div>
+<!-- certification -->
+<div class="section">
+  <h3>Certification</h3>
+  <a href="https://learn.mongodb.com/" target="_blank">
+    MongoDB University – Official Certifications
+  </a><br>
+  <a href="https://www.coursera.org/courses?query=mongodb" target="_blank">
+    MongoDB Courses & Certificates – Coursera
+  </a>
+</div>
+<!-- resources -->
+    <div class="section">
+      <h3>Resources</h3>
+      <div class="video-grid">
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/J6mDkcqU_ZE"></iframe><p>MongoDB Tutorial in 1 Hour (2024) – Code With Harry</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/9Om0FMBz1yU"></iframe><p>CRUD Operations in MongoDB – Code With Harry</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/_lLz56gRYe4"></iframe><p>MongoDB Introduction & Installation – Code With Harry</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/oMrKVEedpHg"></iframe><p>Installing MongoDB & Compass – Code With Harry</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/oSIv-E60NiU"></iframe><p>MongoDB Tutorial For Beginners – Code With Harry</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/M1dKYQ7GsTg"></iframe><p>MongoDB Crash Course – Code With Harry</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/uNZwUdfU43Q"></iframe><p>MERN Stack + Projects – Apna College</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/GdXF8rJEm3k"></iframe><p>MERN Stack Full Preparation – Apna College</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/9H_rX1vHuoM"></iframe><p>DSA vs Development – Apna College</p></div>
+        <div class="video-card"><iframe src="https://www.youtube.com/embed/ygPgztCFDjw"></iframe><p>MERN Stack Project Ideas – Apna College</p></div>
+      </div>
+    </div>
+<!-- roadmap -->
+    <div class="section"><h3>Roadmap</h3>
+      <a href="https://roadmap.sh/mongodb" target="_blank">View MongoDB Roadmap</a>
+    </div>
+  </div>
+  <!-- rust -->
+<div id="rust" class="details">
+<!-- documentation -->
+  <div class="section">
+    <h3>Documentation</h3>
+    <a href="https://doc.rust-lang.org/book/" target="_blank">
+      The Rust Programming Language (Official Book)
+    </a><br>
+    <a href="https://www.w3schools.com/rust/index.php" target="_blank">
+      Rust Tutorial – W3Schools
+    </a>
+  </div>
+<!-- certification -->
+ <div class="section">
+  <h3>Certification</h3>
+  <a href="https://www.coursera.org/specializations/rust-programming" target="_blank">
+    Rust Programming Specialization – Coursera
+  </a><br>
+  <a href="https://www.coursera.org/courses?query=rust" target="_blank">
+    Rust Courses & Certificates – Coursera
+  </a>
+</div>
+
+<!-- resources -->
+  <div class="section">
+    <h3>Resources</h3>
+
+    <div class="video-grid">
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/zF34dRivLOw"></iframe>
+        <p>Rust Crash Course – Traversy Media</p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/BpPEoZW5IiY"></iframe>
+        <p>Learn Rust Programming – freeCodeCamp</p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/qP7LzZqGh30"></iframe>
+        <p>Rust Tutorial for Beginners – Harkirat Singh </p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/ygL_xcavzQ4"></iframe>
+        <p>Rust Tutorial Full Course – Derek Banas</p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/0y6RKiIk6cs"></iframe>
+        <p>Rust for Dummies in 12 Minutes – Let’s Get Rusty</p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/rQ_J9WH6CGk"></iframe>
+        <p>Rust Programming Full Course – BekBrace</p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/RU7BYxmSBNg"></iframe>
+        <p>Rust Programming 101 – Code to the Moon</p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/EF3Z4jdD1EQ"></iframe>
+        <p>Crust of Rust: std::collections – Jon Gjengset</p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/ulhYScz65RI"></iframe>
+        <p>Master Rust in 200 Seconds (Hindi / Urdu)</p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/3lvofS5vktc"></iframe>
+        <p>Rust Changed How I Code Forever – No Boilerplate</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Roadmap</h3>
+    <a href="https://roadmap.sh/rust" target="_blank">
+      View Rust Developer Roadmap
+    </a>
+  </div>
+
+</div>
+<!-- C -->
+<div id="c" class="details">
+
+  <!-- documentation -->
+  <div class="section">
+    <h3>Documentation</h3>
+    <a href="https://www.w3schools.com/c/index.php" target="_blank">
+      C Programming Tutorial – W3Schools
+    </a>
+  </div>
+
+  <!-- certification -->
+  <div class="section">
+    <h3>Certification</h3>
+    <a href="https://www.w3schools.com/c/c_exam.php" target="_blank">
+      W3Schools C Certification Exam
+    </a><br>
+    <a href="https://www.coursera.org/courses?query=c%20programming" target="_blank">
+      C Programming Courses & Certificates – Coursera
+    </a>
+  </div>
+
+  
+ <!-- resources -->
+<div class="section">
+  <h3>Resources</h3>
+
+  <div class="video-grid">
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/ZSPZob_1TOk"></iframe>
+      <p>C Language In One Video (15 Hrs) – CodeWithHarry </p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR"></iframe>
+      <p>C Language Full Course (Playlist) – CodeWithHarry </p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/irqbmMNs2Bo"></iframe>
+      <p>C Programming One Shot (Hindi) – College Wallah </p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLdo5W4Nhv31a8UcMN9-35ghv8qyFWD9_S"></iframe>
+      <p>C Programming for Beginners (Playlist) – Jenny’s Lectures </p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR"></iframe>
+      <p>C Programming (Best for Internals) – Neso Academy</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/87SH2Cn0s9A"></iframe>
+      <p>C Programming Full Course (4 Hours) – Bro Code</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/KJgsSFOSQv0"></iframe>
+      <p>C Programming Tutorial for Beginners – freeCodeCamp</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/8mAITcNt710"></iframe>
+      <p>CS50: Introduction to Computer Science – Harvard</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PL7ersPsTyYt2Q-SqZxTA1D-melSfqBRMW"></iframe>
+      <p>C Language Tutorial (Full Playlist) – MySirG </p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/DplxIq0mc_Y"></iframe>
+      <p>Advanced C: Pointers & Memory – Jacob Sorber</p>
+    </div>
+
+  </div>
+</div>
+
+  <!-- roadmap -->
+<div class="section">
+  <h3>Roadmap</h3>
+  <a href="https://dev.to/dev_frank/roadmap-to-learning-c-programming-22e6" target="_blank">
+    Roadmap to Learning C Programming
+  </a>
+</div></div>
+
+
+<!-- java -->
+<div id="java" class="details">
+
+  <!-- documentation -->
+  <div class="section">
+    <h3>Documentation</h3>
+    <a href="https://docs.oracle.com/javase/tutorial/" target="_blank">
+      Java Tutorials – Oracle (Official)
+    </a><br>
+    <a href="https://www.w3schools.com/java/" target="_blank">
+      Java Tutorial – W3Schools
+    </a>
+  </div>
+
+  <!-- certification -->
+  <div class="section">
+    <h3>Certification</h3>
+    <a href="https://www.coursera.org/specializations/java-programming" target="_blank">
+      Java Programming Specialization – Coursera
+    </a><br>
+    <a href="https://campus.w3schools.com/products/java-course" target="_blank">
+      Java Certification Course – W3Schools
+    </a>
+  </div>
+
+  <!-- resources -->
+  <div class="section">
+    <h3>Resources</h3>
+
+    <div class="video-grid">
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q"></iframe>
+        <p>Java Course for Beginners (Playlist) – CodeWithHarry </p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop"></iframe>
+        <p>Java Placement Course – Apna College </p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ"></iframe>
+        <p>Java DSA Bootcamp (Interviews) – Kunal Kushwaha </p>
+      </div>
+
+      <div class="video-card">
+  <iframe src="https://www.youtube.com/embed/r3GGV2TG_vw"></iframe>
+  <p>Java Programming All-in-One (6 Hours) – Caleb Curry</p>
+</div>
+
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/xk4_1vDrzzo"></iframe>
+        <p>Java Full Course (12 Hours) – Bro Code</p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLd3UqWTnYXOmx_J1774ukG_rvrpyWczm0"></iframe>
+        <p>Core Java (Deep Dive / Hindi) – Durga Software </p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/eIrMbAQSU34"></iframe>
+        <p>Java Tutorial for Beginners (2 Hrs) – Programming with Mosh</p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/Qgl81fPcLc8"></iframe>
+        <p>Java Full Course (Modern, Project-Based) – Amigoscode</p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/A74TOX803D0"></iframe>
+        <p>Java Full Course for Beginners – freeCodeCamp</p>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLBlnK6fEyqRjKA_NuK9mHmlk0dZzuP1P5"></iframe>
+        <p>Java Programming (Academic Style) – Neso Academy</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- roadmap -->
+  <div class="section">
+    <h3>Roadmap</h3>
+    <a href="https://roadmap.sh/java" target="_blank">
+      View Java Developer Roadmap
+    </a>
+  </div>
+  
+
+</div>
+<!-- kotlin  -->
+<div id="kotlin" class="details">
+
+  <!-- documentation -->
+  <div class="section">
+    <h3>Documentation</h3>
+    <a href="https://kotlinlang.org/docs/home.html" target="_blank">
+      Kotlin Official Documentation
+    </a><br>
+    <a href="https://www.w3schools.com/kotlin/index.php" target="_blank">
+      Kotlin Tutorial – W3Schools
+    </a>
+  </div>
+
+  <!-- certification -->
+  <div class="section">
+    <h3>Certification</h3>
+    <a href="https://developers.google.com/profile/badges/playlists/android/kotlin_bootcamp" target="_blank">
+      Kotlin Bootcamp – Google (Official)
+    </a><br>
+    <a href="https://www.coursera.org/courses?query=kotlin" target="_blank">
+      Kotlin Courses & Certificates – Coursera
+    </a>
+  </div>
+<!-- resources -->
+<div class="section">
+  <h3>Resources</h3>
+
+  <div class="video-grid">
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/dzUc9vrsldM"></iframe>
+      <p>Full 2025 Kotlin Crash Course (Modern & Best) – Philipp Lackner</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/F9UC9DY-vIU"></iframe>
+      <p>Kotlin Course for Beginners (Full Tutorial) – freeCodeCamp</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/8Ds57M1wCGA"></iframe>
+      <p>Complete Kotlin Course in One Video (Hindi) – Learn Code With Durgesh 🇮🇳</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/wuiT4T_LJQo"></iframe>
+      <p>Kotlin Tutorial for Beginners (Full 9-Hour Course) – Smartherd</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/BCSlZIUj18Y"></iframe>
+      <p>Android Development with Kotlin (12 Hours) – Anuj Bhaiya 🇮🇳</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/PFVKjUUZMf8"></iframe>
+      <p>Kotlin Tutorial For Beginners (Full Course) – Simplilearn</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/kNghEbknLs8"></iframe>
+      <p>Build an Android Quiz App with Kotlin – Rivaan Ranawat 🇮🇳</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLWz5rJ2EKKc_XOgcRukSoKKjewFJZrKV0"></iframe>
+      <p>Android Basics in Kotlin (Official Google) – Android Developers</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/HwoxgUPabMk"></iframe>
+      <p>Programming with Kotlin (Masterclass) – Stevdza-San</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLUhfM8afLE_NQbVaoIEhceR9npbY57Pdg"></iframe>
+      <p>Android Development with Kotlin (Hindi Playlist) – Simplified Coding 🇮🇳</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <!-- roadmap -->
+  <div class="section">
+    <h3>Roadmap</h3>
+    <a href="https://roadmap.sh/kotlin" target="_blank">
+      View Kotlin Developer Roadmap
+    </a>
+  </div>
+
+</div>
+
+
+
+
+<script>
+ 
+</script>
+
+</body>
+</html>
