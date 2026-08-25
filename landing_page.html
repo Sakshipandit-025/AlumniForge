@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlumniForge | Connect. Grow. Inspire.</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* <!--- Navbar ---!> */
+    header {
+      background-color: #0f172a;
+      color: #fff;
+      padding: 1rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      color: #fff;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem auto;
+    }
+
+    .hero .btn {
+      background-color: #38bdf8;
+      color: #0f172a;
+      padding: 0.8rem 1.8rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .hero .btn:hover {
+      background-color: #0ea5e9;
+      color: #fff;
+    }
+
+    /* --- Features Section --- */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .feature-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card h3 {
+      margin-bottom: 1rem;
+      color: #0f172a;
+    }
+
+    .feature-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background-color: #0f172a;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Responsive Hero Text --- */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <h1>AlumniForge</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Network</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Mentorship</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Connect. Grow. Inspire.</h2>
+    <p>Welcome to AlumniForge — where connections spark opportunities. Join your alumni network, explore mentorship, and be part of a lifelong community.</p>
+    <a href="network.html" class="btn">Join the Network</a>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-card">
+      <h3>🌐 Global Networking</h3>
+      <p>Connect with alumni around the world. Build meaningful professional relationships and expand your opportunities.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🎓 Mentorship Programs</h3>
+      <p>Find mentors or become one. Share knowledge and guide others through career and academic growth.</p>
+    </div>
+    <div class="feature-card">
+      <h3>📅 Exclusive Events</h3>
+      <p>Attend reunions, webinars, and workshops. Stay updated and engaged with your alumni community.</p>
+    </div>
+    <div class="feature-card">
+      <h3>💼 Career Opportunities</h3>
+      <p>Explore alumni-posted job openings, internships, and startup collaborations tailored for the community.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AlumniForge. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+<!--Chatbot-->
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'https://sakshiaa.app.n8n.cloud/webhook/178831dd-7eff-4673-8bcf-82dc30036caa/chat'
+	});
+</script>
+</body>
+</html>
