@@ -37,9 +37,7 @@
       font-family: "DM Sans", Arial, sans-serif;
     }
 
-    /* =========================
-       HERO
-    ========================== */
+    /* HERO */
 
     header {
       max-width: 1180px;
@@ -109,9 +107,7 @@
       letter-spacing: 0.18em;
     }
 
-    /* =========================
-       MAIN CONTAINER
-    ========================== */
+    /*  MAIN CONTAINER */
 
     .container {
       width: min(1120px, calc(100% - 40px));
@@ -121,9 +117,7 @@
       padding: 38px 0 85px;
     }
 
-    /* =========================
-       SECTIONS
-    ========================== */
+    /*SECTIONS*/
 
     .section {
       margin-bottom: 18px;
@@ -152,9 +146,7 @@
       letter-spacing: -0.04em;
     }
 
-    /* =========================
-       LINKS
-    ========================== */
+    /* LINKS */
 
     .section > a {
       display: inline-flex;
@@ -202,9 +194,7 @@
       transform: rotate(45deg);
     }
 
-    /* =========================
-       VIDEO GRID
-    ========================== */
+    /*VIDEO GRID */
 
     .video-grid {
       display: grid;
@@ -214,9 +204,7 @@
       gap: 18px;
     }
 
-    /* =========================
-       VIDEO CARDS
-    ========================== */
+    /* VIDEO CARDS*/
 
     .video-card {
       overflow: hidden;
@@ -265,9 +253,7 @@
       line-height: 1.45;
     }
 
-    /* =========================
-       TABLET
-    ========================== */
+    /*TABLET */
 
     @media (max-width: 900px) {
 
@@ -277,9 +263,7 @@
 
     }
 
-    /* =========================
-       MOBILE
-    ========================== */
+    /* MOBILE*/
 
     @media (max-width: 620px) {
 
@@ -317,9 +301,7 @@
 
 <body>
 
-  <!-- =========================
-       HERO
-  ========================== -->
+  <!-- HERO-->
 
   <header>
     <h2>MongoDB Resources</h2>
@@ -328,10 +310,7 @@
 
   <div class="container">
 
-    <!-- =========================
-         DOCUMENTATION
-    ========================== -->
-
+    <!--  DOCUMENTATION-->
     <div class="section">
 
       <h3>Documentation</h3>
@@ -357,9 +336,7 @@
     </div>
 
 
-    <!-- =========================
-         CERTIFICATION
-    ========================== -->
+    <!-- CERTIFICATION-->
 
     <div class="section">
 
@@ -386,9 +363,7 @@
     </div>
 
 
-    <!-- =========================
-         RESOURCES
-    ========================== -->
+    <!-- RESOURCES-->
 
     <div class="section">
 
@@ -490,9 +465,7 @@
     </div>
 
 
-    <!-- =========================
-         ROADMAP
-    ========================== -->
+    <!--ROADMAP-->
 
     <div class="section">
 
@@ -509,6 +482,14 @@
     </div>
 
   </div>
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+      webhookUrl: 'https://sakshiaa.app.n8n.cloud/webhook/178831dd-7eff-4673-8bcf-82dc30036caa/chat'
+    });
+  </script>
 </body>
 </html>
