@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile - AlumniForge</title>
+
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1>My Profile</h1>
+
+        <!-- Profile Header -->
+        <div class="profile-header">
+
+            <div class="profile-photo">
+                <img id="profilePhoto" src="" alt="Profile Photo">
+                <p id="photoPlaceholder">Profile Photo</p>
+            </div>
+
+            <div class="profile-info">
+                <h2>Your Name</h2>
+                <p>@username</p>
+                <p>College / University Name</p>
+                <p>email@example.com</p>
+            </div>
+
+        </div>
+
+
+        <!-- About Me -->
+        <div class="profile-card">
+            <h2>About Me</h2>
+            <p>
+                Write a short summary about yourself, your interests,
+                goals and what you are currently learning.
+            </p>
+        </div>
+
+
+        <!-- Personal Information -->
+        <div class="profile-card">
+            <h2>Personal Information</h2>
+
+            <p><strong>Full Name:</strong> Same as Registration</p>
+            <p><strong>Email:</strong> Same as Registration</p>
+            <p><strong>Phone:</strong> Same as Registration</p>
+            <p><strong>Location:</strong> City, Country</p>
+        </div>
+
+
+        <!-- Education -->
+        <div class="profile-card">
+            <h2>Education</h2>
+
+            <h3>Degree / Course Name</h3>
+            <p>College / University Name</p>
+            <p>Branch / Department</p>
+            <p>2024 - 2028</p>
+        </div>
+
+
+        <!-- Skills -->
+        <div class="profile-card">
+            <h2>Skills</h2>
+
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Communication</li>
+            </ul>
+        </div>
+
+
+        <!-- Resume -->
+        <div class="profile-card">
+            <h2>Add Your Resume</h2>
+
+            <p>
+                Upload your resume to showcase your experience and skills.
+            </p>
+
+            <button>Upload Resume</button>
+        </div>
+
+
+        <!-- Experience -->
+        <div class="profile-card">
+            <h2>Experience</h2>
+
+            <h3>Role / Position</h3>
+            <p>Organization Name</p>
+            <p>Duration</p>
+
+            <p>
+                Short description of your experience and responsibilities.
+            </p>
+        </div>
+
+
+        <!-- Certifications -->
+        <div class="profile-card">
+            <h2>Certifications</h2>
+
+            <h3>Certificate Name</h3>
+            <p>Issued by: Organization Name</p>
+            <p>Year: 2026</p>
+
+            <button>Upload Certificate</button>
+        </div>
+
+
+        <!-- Courses -->
+        <div class="profile-card">
+            <h2>Enroll Course</h2>
+
+            <p>
+                Explore and enroll in courses according to your
+                learning interests.
+            </p>
+
+            <button>Explore Courses</button>
+        </div>
+
+
+        <!-- Learning & Progress -->
+        <div class="profile-card">
+            <h2>Learning & Progress</h2>
+
+            <p><strong>Courses Completed:</strong> 0</p>
+            <p><strong>Courses In Progress:</strong> 0</p>
+            <p>
+                <strong>Learning Interests:</strong>
+                Web Development, AI, Data Science
+            </p>
+        </div>
+
+
+        <!-- Contributions -->
+        <div class="profile-card">
+            <h2>Contributions</h2>
+
+            <p>
+                Your contributions to the AlumniForge community
+                will appear here.
+            </p>
+        </div>
+
+
+        <!-- Professional Links -->
+        <div class="profile-card">
+            <h2>Professional Links</h2>
+
+            <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </div>
+
+
+        <!-- Quiz Record -->
+        <div class="profile-card">
+            <h2>Quiz Record</h2>
+
+            <p><strong>Quizzes Attempted:</strong> 0</p>
+            <p><strong>Quizzes Completed:</strong> 0</p>
+            <p><strong>Average Score:</strong> 0%</p>
+        </div>
+
+
+        <!-- Profile Visibility -->
+        <div class="profile-card">
+            <h2>Profile Visibility</h2>
+
+            <p>Choose who can view your profile.</p>
+
+            <p>
+                <strong>Current Visibility:</strong> Public
+            </p>
+
+            <p>
+                Public / Private / Community Members
+            </p>
+        </div>
+
+    </main>
+
+
+    <script>
+        const savedPhoto = localStorage.getItem("alumniForgeProfilePhoto");
+
+        const profilePhoto = document.getElementById("profilePhoto");
+        const photoPlaceholder = document.getElementById("photoPlaceholder");
+
+        if (savedPhoto) {
+            profilePhoto.src = savedPhoto;
+            profilePhoto.style.display = "block";
+            photoPlaceholder.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
